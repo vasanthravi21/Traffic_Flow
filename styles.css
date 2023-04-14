@@ -1,0 +1,72 @@
+body {
+    background-color: rgba(46, 30, 91, 0.886);
+}
+
+.title {
+    text-align: center;
+    /* display: relative; */
+}
+
+/* .container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+} */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(46, 30, 91, 0.886);
+}
+
+.flex-container>div {
+    background-color: #4a849e;
+    margin: 40px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* Graph */
+#myChart{
+    /* padding-bottom: 1rem; */
+    background-color:aliceblue;
+    width: 500px;
+    height: 500px;
+}
+
+#myChart1{
+    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
+}
+
+
+.flex-container1{
+    /* margin: 40px; */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(46, 30, 91, 0.886); */
+}
+
+.flex-container2{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(46, 30, 91, 0.886); */
+}
+
+.parent{
+    display: grid;
+    gap: 50px;
+}
+img{
+    
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Traffic Flow</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="title">
+            <h1>Traffic Flow</h1>
+
+            <!-- <div class="container">
+            <div class=" bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div> -->
+        </div>
+        <div class="flex-container">
+            <div>
+                <h6>Vehicles This <br> Minute</h6>
+                <h6 style="align-items: center;">3</h6>
+                
+            </div>
+            <div>
+                <h6>Total Vehicle <br> <br> <br>4</h6>
+            </div>
+            <div>3</div>
+        </div>
+
+        <div class="flex-container1">
+            <div class="image">
+                <img src="images.jpg" width="800px">
+            </div>
+
+            <!-- <div class="graph-flex"> -->
+
+            <div>
+
+                <canvas id="myChart"></canvas>
+
+                <script>
+                    const xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+                    const yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+                    new Chart("myChart", {
+                        type: "line",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                                fill: false,
+                                lineTension: 0,
+                                backgroundColor: "rgba(0,0,255,1.0)",
+                                borderColor: "rgba(0,0,255,0.1)",
+                                data: yValues
+                            }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            scales: {
+                                yAxes: [{ ticks: { min: 6, max: 16 } }],
+                            }
+                        }
+                    });
+                </script>
+            </div>
+
+            <div>
+                <canvas id="myChart1"></canvas>
+
+                <script>
+                    const x1Values = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+                    const y1Values = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+                    new Chart("myChart1", {
+                        type: "line",
+                        data: {
+                            labels: x1Values,
+                            datasets: [{
+                                fill: false,
+                                lineTension: 0,
+                                backgroundColor: "rgba(0,0,255,1.0)",
+                                borderColor: "rgba(0,0,255,0.1)",
+                                data: y1Values
+                            }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            scales: {
+                                yAxes: [{ ticks: { min: 6, max: 16 } }],
+                            }
+                        }
+                    });
+                </script>
+            </div>
+
+
+            <!-- </div> -->
+        </div>
+
+
+        <div class="flex-container2">
+            <div>
+                <div id="piechart"></div>
+
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+                <script type="text/javascript">
+                    // Load google charts
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart);
+
+                    // Draw the chart and set the chart values
+                    function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['Task', 'Hours per Day'],
+                            ['Work', 8],
+                            ['Eat', 2],
+                            ['TV', 4],
+                            ['Gym', 2],
+                            ['Sleep', 8]
+                        ]);
+
+                        // Optional; add a title and set the width and height of the chart
+                        var options = { 'title': 'My Average Day', 'width': 550, 'height': 400 };
+
+                        // Display the chart inside the <div> element with id="piechart"
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                        chart.draw(data, options);
+                    }
+                </script>
+            </div>
+
+            <div>
+                <div id="piechart1"></div>
+
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+                <script type="text/javascript">
+                    // Load google charts
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart1);
+
+                    // Draw the chart and set the chart values
+                    function drawChart1() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['Task', 'Hours per Day'],
+                            ['Work', 8],
+                            ['Eat', 2],
+                            ['TV', 4],
+                            ['Gym', 2],
+                            ['Sleep', 8]
+                        ]);
+
+                        // Optional; add a title and set the width and height of the chart
+                        var options = { 'title': 'My Average Day', 'width': 550, 'height': 400 };
+
+                        // Display the chart inside the <div> element with id="piechart"
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+                        chart.draw(data, options);
+                    }
+                </script>
+            </div>
+
+            <div>
+                <div id="piechart2"></div>
+
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+                <script type="text/javascript">
+                    // Load google charts
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart2);
+
+                    // Draw the chart and set the chart values
+                    function drawChart2() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['Task', 'Hours per Day'],
+                            ['Work', 8],
+                            ['Eat', 2],
+                            ['TV', 4],
+                            ['Gym', 2],
+                            ['Sleep', 8]
+                        ]);
+
+                        // Optional; add a title and set the width and height of the chart
+                        var options = { 'title': 'My Average Day', 'width': 550, 'height': 400 };
+
+                        // Display the chart inside the <div> element with id="piechart"
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+                        chart.draw(data, options);
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
